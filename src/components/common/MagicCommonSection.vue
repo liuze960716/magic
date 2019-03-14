@@ -23,9 +23,13 @@
   .sidebar{
     display: flex;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     padding-top: 50px;
   }
-
+  @media screen and (max-width: 945px){
+    .sidebar{
+      margin-top: 50px;
+    }
+  }
 
 </style>

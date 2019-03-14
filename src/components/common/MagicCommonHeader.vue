@@ -2,12 +2,12 @@
   <header class="main_header">
     <!--商标-->
     <a href="#" class="logo">
-      <span class="logo_mini"><img src="../../assets/img/logo_1.png" alt=""></span>
+      <span class="logo_mini"><img src="../../assets/img/logo_index.png" alt=""></span>
       <span class="logo_lg"><img src="../../assets/img/logo.png" alt=""></span>
     </a>
     <!--右边的内容-->
     <nav class="navbar">
-      <a href="#" class="sidebar_toggle"><img src="../../assets/img/pic_01.gif" alt=""></a>
+      <a href="#" class="sidebar_toggle" ><img src="../../assets/img/pic_01.gif" alt=""></a>
       <div class="navbar_menu">
         <ul class="navbar_nav nav">
           <li>
@@ -54,6 +54,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 999;
   }
   .main_header .logo {
     display: block;
@@ -85,13 +86,12 @@
     float: left;
     padding: 15px 15px;
   }
-  .navbar_nav li{
-    float: left;
-  }
   .navbar_menu{
     float: right;
   }
-
+  .navbar_nav li{
+    float: left;
+  }
   .navbar a:hover{
     background: rgba(0,0,0,0.1);
     color: #f6f6f6;;
@@ -117,5 +117,28 @@
   .user_menu a span{
     color: #ffffff;
   }
+  @media screen and (max-width: 945px) {
+    .main_header{
+      background-color: #3c8dbc;
+    }
+    .main_header .logo{
+      width: 100%;
+      height: 50px;
+    }
+    .logo_mini{
+      display: block;
+    }
+    .logo_mini img{
+      width: 140px;
+      height: 34px;
+    }
+    .navbar{
+      margin: 0;
+      display: block;
+      width: 100%;
+      min-height: 50px;
+      background-color: #3c8dbc;
+    }
 
+  }
 </style>

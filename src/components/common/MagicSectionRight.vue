@@ -16,7 +16,7 @@
     </div>
     <div class="content">
       <div class="row">
-        <div class="col-lg-3 col-xs-6">
+        <div class="col-xs-6 col_one">
           <!-- 考勤 -->
           <div class="small_box bg_aqua">
             <div class="inner"><h3>未签到</h3><p>请到考勤管理签到</p></div>
@@ -25,6 +25,60 @@
             </div>
             <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
           </div>
+        </div>
+        <div class="col-lg-3 col-xs-6 ">
+          <!-- 通讯录 -->
+          <div class="small_box col_two">
+            <div class="inner"><h3>1</h3><p>通讯录</p></div>
+            <div class="icon">
+              <img src="" alt="">
+            </div>
+            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6 ">
+          <!-- 文件管理 -->
+          <div class="small_box col_three">
+            <div class="inner"><h3>3</h3><p>文件管理</p></div>
+            <div class="icon">
+              <img src="" alt="">
+            </div>
+            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-6 ">
+          <!-- 讨论区 -->
+          <div class="small_box col_fore">
+            <div class="inner"><h3>2</h3><p>讨论区</p></div>
+            <div class="icon">
+              <img src="" alt="">
+            </div>
+            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="connectedSortable col-lg-7">
+          <div class="box">
+            <div class="box_header" style="cursor: move;">
+              <h3 class="box_title">本周系统使用统计</h3>
+              <div class="pull_right box_tools">
+                <div class="btn_group">
+                  <button class="btn">
+                    <i class="fa fa-minus">-</i>
+                  </button>
+                  <button class="btn">
+                    <i class="fa fa-times">-</i>
+                  </button>
+                  <button class="btn">
+                    <i class="fa fa-bars">-</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="box-body"></div>
+          </div>
+          <div></div>
         </div>
       </div>
     </div>
@@ -41,7 +95,7 @@
   .content_wrapper{
     background: #ecf0f5;
     flex:1;
-    height: 700px;
+    height: 100%;
   }
   .content_header{
     position: relative;
@@ -102,15 +156,36 @@
     margin-left: -15px;
     clear: both;
   }
-  /*@media (min-width: 1200px)*/
-    /*.col-lg-3 {*/
-      /*width: 25%;*/
-    /*}*/
+  @media (min-width: 1200px){
+    .col-xs-6{
+      width: 22%;
+    }
+  }
   .col-lg-3{
     float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
-  .col-xs-6{
-    width: 25%;
+  .col_one{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 30px;
+  }
+  .bg_aqua{
+    background-color: #00c0ef;
+  }
+  .col_two{
+    background-color: #00a65a;
+  }
+  .col_three{
+    background-color: #f39c12;
+  }
+  .col_fore{
+    background-color: #dd4b39;
   }
   .small_box {
     border-radius: 2px;
@@ -118,9 +193,6 @@
     display: block;
     margin-bottom: 20px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  }
-  .bg_aqua{
-    background-color: #00c0ef;
   }
   .small_box>.inner {
     padding: 10px;
@@ -130,11 +202,12 @@
     font-weight: bold;
     margin: 0 0 10px 0;
     white-space: nowrap;
+    color: #ffffff;
   }
   .small_box p {
     font-size: 15px;
+    color: #ffffff;
   }
-
   .small_box>.small_box_footer {
     position: relative;
     text-align: center;
@@ -145,5 +218,97 @@
     z-index: 10;
     background: rgba(0,0,0,0.1);
     text-decoration: none;
+  }
+  .connectedSortable{
+    min-width: 100px;
+  }
+  @media (min-width: 1200px){
+    .col-lg-7 {
+      width: 58%;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @media (max-width: 945px){
+    .col-lg-7 {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+
+    }
+  }
+
+  .box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  }
+  .box_header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+  }
+  .box_header .box_title{
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+   }
+  .box_header>.box_tools {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .pull_right {
+     float: right;
+   }
+  .btn_group{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .btn {
+    background-color: #3c8dbc;
+    display: inline-block;
+    padding: 6px 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+  @media screen and (max-width: 945px){
+    .content_header h1{
+      width: 100%;
+    }
+    .breadcrumb{
+
+    }
+    .col-xs-6{
+      width: 45%;
+    }
+    .col_one{
+      padding-left: 15px;
+    }
+  }
+  @media (max-width: 1400px){
+    .col-xs-6{
+      width: 45%;
+    }
+    .col_one{
+      padding-left: 15px;
+    }
   }
 </style>

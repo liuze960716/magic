@@ -27,7 +27,14 @@
 
         <el-col :span="12">
 
-          <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" background-color="#222d32" text-color="#fff" active-text-color="#ffd04b">
+          <el-menu
+            default-active="2"
+            class="el-menu-vertical-demo"
+            @open="handleOpen"
+            @close="handleClose"
+            background-color="#222d32"
+            text-color="#fff"
+            active-text-color="#ffd04b">
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-location"></i>
@@ -93,6 +100,71 @@
               </el-menu-item-group>
             </el-submenu>
 
+            <el-submenu index="6">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>导航一</span>
+              </template>
+
+              <el-menu-item-group>
+                <el-menu-item index="1-1">选项1</el-menu-item>
+                <el-menu-item index="1-2">选项2</el-menu-item>
+                <el-menu-item index="1-3">选项3</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
+            <el-submenu index="7">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>导航一</span>
+              </template>
+
+              <el-menu-item-group>
+                <el-menu-item index="1-1">选项1</el-menu-item>
+                <el-menu-item index="1-2">选项2</el-menu-item>
+                <el-menu-item index="1-3">选项3</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
+            <el-submenu index="8">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>导航一</span>
+              </template>
+
+              <el-menu-item-group>
+                <el-menu-item index="1-1">选项1</el-menu-item>
+                <el-menu-item index="1-2">选项2</el-menu-item>
+                <el-menu-item index="1-3">选项3</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
+            <el-submenu index="9">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>导航一</span>
+              </template>
+
+              <el-menu-item-group>
+                <el-menu-item index="1-1">选项1</el-menu-item>
+                <el-menu-item index="1-2">选项2</el-menu-item>
+                <el-menu-item index="1-3">选项3</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
+            <el-submenu index="10">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>导航一</span>
+              </template>
+
+              <el-menu-item-group>
+                <el-menu-item index="1-1">选项1</el-menu-item>
+                <el-menu-item index="1-2">选项2</el-menu-item>
+                <el-menu-item index="1-3">选项3</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
           </el-menu>
 
         </el-col>
@@ -119,11 +191,12 @@
 
 <style scoped>
   .slimScrollDiv{
+    height: 100%;
     overflow: hidden;
     background-color: #222d32;
   }
   .side{
-    height: 700px;
+    height: 100%;
     overflow: hidden;
   }
   .side a{
@@ -236,5 +309,10 @@
   }
   .el-submenu__title{
     background-color: rgb(34, 45, 50);
+  }
+  @media screen and (max-width: 945px){
+    .slimScrollDiv{
+      display: none;
+    }
   }
 </style>
