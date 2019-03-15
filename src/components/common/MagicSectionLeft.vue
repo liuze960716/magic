@@ -7,7 +7,6 @@
         </div>
         <div class="pull_left info">
           <p><span>盖茨</span></p>
-
           <a href="#" class="zai"><span class="dian"></span>在线</a>
         </div>
       </div>
@@ -16,10 +15,10 @@
         <div class="input_group">
           <input type="text" class="form_control" placeholder="查找...">
           <span class="input_group_btn">
-                    <a class="btn btn_flat" href="#">
-                      <img src="../../assets/img/pic_03.gif">
-                    </a>
-                  </span>
+            <a class="btn btn_flat" href="#">
+              <img src="../../assets/img/pic_03.gif">
+            </a>
+          </span>
         </div>
       </div>
 
@@ -28,69 +27,69 @@
         <el-col :span="12">
 
           <el-menu
-            default-active="2"
+            default-active="1"
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
             background-color="#222d32"
             text-color="#fff"
             active-text-color="#ffd04b">
+
             <el-submenu index="1">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-xitongguanli-"></i>
+                <span>系统管理</span>
               </template>
 
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <router-link to="MagicSystemType">
+                  <el-menu-item index="1-1">菜单管理</el-menu-item>
+                </router-link>
+                <el-menu-item index="1-2">类型管理</el-menu-item>
+                <el-menu-item index="1-3">状态管理</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
             <el-submenu index="2">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航二</span>
+                <i class="iconfont icon-jiaoseguanli"></i>
+                <span>角色管理</span>
               </template>
 
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <el-menu-item index="1-1">角色列表</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
             <el-submenu index="3">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-1"></i>
+                <span>用户管理</span>
               </template>
 
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <el-menu-item index="1-1">部门管理</el-menu-item>
+                <el-menu-item index="1-2">职位管理</el-menu-item>
+                <el-menu-item index="1-3">用户管理</el-menu-item>
+                <el-menu-item index="1-3">在线用户</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
             <el-submenu index="4">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-kaoqinbaogao"></i>
+                <span>考勤管理</span>
               </template>
 
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <el-menu-item index="1-1">考勤管理</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
             <el-submenu index="5">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-xitongguanli-"></i>
+                <span>流程管理</span>
               </template>
 
               <el-menu-item-group>
@@ -102,21 +101,23 @@
 
             <el-submenu index="6">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-xitongguanli-"></i>
+                <span>数据管理</span>
               </template>
 
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <router-link to="magicEchaters">
+                  <el-menu-item index="1-1">用户数量</el-menu-item>
+                </router-link>
+                <el-menu-item index="1-2">在线人数</el-menu-item>
+                <el-menu-item index="1-3">热门曲线</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
             <el-submenu index="7">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-email"></i>
+                <span>邮件管理</span>
               </template>
 
               <el-menu-item-group>
@@ -128,8 +129,8 @@
 
             <el-submenu index="8">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-renwu"></i>
+                <span>任务管理</span>
               </template>
 
               <el-menu-item-group>
@@ -141,8 +142,8 @@
 
             <el-submenu index="9">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-xitongguanli-"></i>
+                <span>日程管理</span>
               </template>
 
               <el-menu-item-group>
@@ -154,8 +155,21 @@
 
             <el-submenu index="10">
               <template slot="title">
-                <i class="el-icon-location"></i>
-                <span>导航一</span>
+                <i class="iconfont icon-xitongguanli-"></i>
+                <span>工作计划</span>
+              </template>
+
+              <el-menu-item-group>
+                <el-menu-item index="1-1">选项1</el-menu-item>
+                <el-menu-item index="1-2">选项2</el-menu-item>
+                <el-menu-item index="1-3">选项3</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
+
+            <el-submenu index="11">
+              <template slot="title">
+                <i class="iconfont icon-caiwuguanli"></i>
+                <span>财务管理</span>
               </template>
 
               <el-menu-item-group>
@@ -191,7 +205,6 @@
 
 <style scoped>
   .slimScrollDiv{
-    height: 100%;
     overflow: hidden;
     background-color: #222d32;
   }
@@ -268,10 +281,9 @@
     border: 1px solid transparent;
     transition: all .3s ease-in-out;
     border-top-left-radius: 2px 2px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding-left: 5px;
+    /*padding-left: 5px;*/
     outline: none;
+    padding: 7px 2px;
   }
   .input_group_btn {
     white-space: nowrap;
@@ -289,7 +301,7 @@
   }
   .btn {
     display: inline-block;
-    padding: 9px 13px;
+    padding: 8px 14px;
     margin-bottom: 0;
     font-size: 14px;
     font-weight: 400;
@@ -307,12 +319,24 @@
   .el-submenu{
     width: 230px;
   }
+  .el-submenu:hover{
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #3c8dbc;
+  }
   .el-submenu__title{
     background-color: rgb(34, 45, 50);
+  }
+  .el-menu-item{
+    text-align: center;
   }
   @media screen and (max-width: 945px){
     .slimScrollDiv{
       display: none;
     }
+  }
+  .iconfont{
+    padding-left: 5px;
+    margin-right: 10px;
   }
 </style>

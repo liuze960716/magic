@@ -1,0 +1,74 @@
+{
+  "user":{},
+  "shops":[
+    {
+      "title":"京东自营1",
+      "type":1,
+      "checked":true,
+      "totalPrice":0,
+      "products":[
+        {
+          "title":"1-1 三只松鼠爆浆软心曲奇饼手工网红饼干烘焙甜品早餐零食送女友芒果蔓越莓味160g",
+          "pic":"http://img10.360buyimg.com/mobilecms/s117x117_jfs/t1/4408/8/2555/138916/5b972764Eb76c78f8/957241fe8923fed7.jpg!q70.dpg.webp",
+          "attrs":{
+            "weight":"1",
+            "color":"red",
+            "ver":"1.0"
+          },
+          "price":25.8,
+          "qal":1,
+          "checked":true
+        },
+
+        {
+          "title":"1-2 三只松鼠爆浆软心曲奇饼手工网红饼干烘焙甜品早餐零食送女友芒果蔓越莓味160g",
+          "pic":"http://img10.360buyimg.com/mobilecms/s117x117_jfs/t1/4408/8/2555/138916/5b972764Eb76c78f8/957241fe8923fed7.jpg!q70.dpg.webp",
+          "attrs":{
+            "weight":"1",
+            "color":"red",
+            "ver":"1.0"
+          },
+          "price":25.8,
+          "qal":1,
+          "checked":true
+        }
+      ]
+    },
+    {
+      "title":"京东自营2",
+      "type":1,
+      "checked":true,
+      "totalPrice":0,
+      "products":[
+        {
+          "title":"2-1 三只松鼠爆浆软心曲奇饼手工网红饼干烘焙甜品早餐零食送女友芒果蔓越莓味160g",
+          "pic":"http://img10.360buyimg.com/mobilecms/s117x117_jfs/t1/4408/8/2555/138916/5b972764Eb76c78f8/957241fe8923fed7.jpg!q70.dpg.webp",
+          "attrs":{
+            "weight":"1",
+            "color":"red",
+            "ver":"1.0"
+          },
+          "price":25.8,
+          "qal":1,
+          "checked":true
+        },
+
+        {
+          "title":"2-2 三只松鼠爆浆软心曲奇饼手工网红饼干烘焙甜品早餐零食送女友芒果蔓越莓味160g",
+          "pic":"http://img10.360buyimg.com/mobilecms/s117x117_jfs/t1/4408/8/2555/138916/5b972764Eb76c78f8/957241fe8923fed7.jpg!q70.dpg.webp",
+          "attrs":{
+            "weight":"1",
+            "color":"red",
+            "ver":"1.0"
+          },
+          "price":25.8,
+          "qal":1,
+          "checked":true
+        }
+      ]
+    }
+  ],
+  "totalPrice":0,
+  "checked":true
+
+}

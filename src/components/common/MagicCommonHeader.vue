@@ -1,40 +1,73 @@
 <template>
   <header class="main_header">
     <!--商标-->
-    <a href="#" class="logo">
-      <span class="logo_mini"><img src="../../assets/img/logo_index.png" alt=""></span>
-      <span class="logo_lg"><img src="../../assets/img/logo.png" alt=""></span>
-    </a>
+    <router-link to="MagicSectionRight">
+      <a href="#" class="logo">
+        <span class="logo_mini"><img src="../../assets/img/logo_index.png" alt=""></span>
+        <span class="logo_lg"><img src="../../assets/img/logo.png" alt=""></span>
+      </a>
+    </router-link>
     <!--右边的内容-->
     <nav class="navbar">
-      <a href="#" class="sidebar_toggle" ><img src="../../assets/img/pic_01.gif" alt=""></a>
+      <a href="#" class="sidebar_toggle" >
+        <img src="../../assets/img/pic_01.gif" alt="">
+      </a>
       <div class="navbar_menu">
         <ul class="navbar_nav nav">
           <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-qq"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a></li>
-          <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-fl-gouwuche"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-quanqiu"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-xiazai16"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-lingsheng"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-email"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-renwu"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
           </li>
           <li class="user_menu">
-            <a href="#"><img class="user_image" src="../../assets/img/tx.jpg"><span>盖茨</span></a>
+            <a href="#" target="_blank">
+              <img class="user_image" src="../../assets/img/tx.jpg">
+              <span>盖茨</span>
+            </a>
           </li>
           <li>
-            <a href="#" ><img src="../../assets/img/pic_02.gif" alt="" class="qq_image"></a></li>
+            <a href="#" target="_blank">
+              <span class="iconfont icon-lishijilu"></span>
+              <!--<img src="../../assets/img/pic_02.gif" alt="" class="qq_image">-->
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -49,6 +82,7 @@
 </script>
 
 <style scoped>
+  /*@import "http://at.alicdn.com/t/font_1089298_3owjdcryhjt.css";*/
   .main_header{
     position: fixed;
     top: 0;
@@ -58,12 +92,11 @@
   }
   .main_header .logo {
     display: block;
-    width: 230px;
+    width: 233px;
     height: 50px;
     font-size: 20px;
     line-height: 50px;
     text-align: center;
-    /*padding: 0 15px;*/
     float: left;
     font-weight: 300;
     overflow: hidden;

@@ -1,97 +1,124 @@
 <template>
-  <div class="content_wrapper">
-    <div class="content_header">
-      <h1>
-        控制面板
-        <a href=""><img src="../../assets/img/blue.png"></a>
-        <a href=""><img src="../../assets/img/green.png"></a>
-        <a href=""><img src="../../assets/img/red.png"></a>
-        <a href=""><img src="../../assets/img/yellow.png"></a>
-        <a href=""><img src="../../assets/img/purple.png"></a>
-      </h1>
-      <ul class="breadcrumb">
-        <li><img class="breadcrumb_01" src="../../assets/img/pic_06.gif" alt="">首页</li>
-        <li><img class="breadcrumb_02" src="../../assets/img/pic_07.gif" alt="">控制面板</li>
-      </ul>
-    </div>
-    <div class="content">
-      <div class="row">
-        <div class="col-xs-6 col_one">
-          <!-- 考勤 -->
-          <div class="small_box bg_aqua">
-            <div class="inner"><h3>未签到</h3><p>请到考勤管理签到</p></div>
-            <div class="icon">
-              <img src="" alt="">
-            </div>
-            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-xs-6 ">
-          <!-- 通讯录 -->
-          <div class="small_box col_two">
-            <div class="inner"><h3>1</h3><p>通讯录</p></div>
-            <div class="icon">
-              <img src="" alt="">
-            </div>
-            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-xs-6 ">
-          <!-- 文件管理 -->
-          <div class="small_box col_three">
-            <div class="inner"><h3>3</h3><p>文件管理</p></div>
-            <div class="icon">
-              <img src="" alt="">
-            </div>
-            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-xs-6 ">
-          <!-- 讨论区 -->
-          <div class="small_box col_fore">
-            <div class="inner"><h3>2</h3><p>讨论区</p></div>
-            <div class="icon">
-              <img src="" alt="">
-            </div>
-            <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
-          </div>
-        </div>
+    <div class="content_wrapper">
+      <div class="content_header">
+        <h1>
+          控制面板
+          <a href=""><img src="../../assets/img/blue.png"></a>
+          <a href=""><img src="../../assets/img/green.png"></a>
+          <a href=""><img src="../../assets/img/red.png"></a>
+          <a href=""><img src="../../assets/img/yellow.png"></a>
+          <a href=""><img src="../../assets/img/purple.png"></a>
+        </h1>
+        <ul class="breadcrumb">
+          <li><img class="breadcrumb_01" src="../../assets/img/pic_06.gif" alt="">首页</li>
+          <li><img class="breadcrumb_02" src="../../assets/img/pic_07.gif" alt="">控制面板</li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="connectedSortable col-lg-7">
-          <div class="box">
-            <div class="box_header" style="cursor: move;">
-              <h3 class="box_title">本周系统使用统计</h3>
-              <div class="pull_right box_tools">
-                <div class="btn_group">
-                  <button class="btn">
-                    <i class="fa fa-minus">-</i>
-                  </button>
-                  <button class="btn">
-                    <i class="fa fa-times">-</i>
-                  </button>
-                  <button class="btn">
-                    <i class="fa fa-bars">-</i>
-                  </button>
+      <div class="content">
+        <div class="row">
+          <div class="col-xs-6 col_one">
+            <!-- 考勤 -->
+            <div class="small_box bg_aqua">
+              <div class="inner"><h3>未签到</h3><p>请到考勤管理签到</p></div>
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xs-6 ">
+            <!-- 通讯录 -->
+            <div class="small_box col_two">
+              <div class="inner"><h3>1</h3><p>通讯录</p></div>
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xs-6 ">
+            <!-- 文件管理 -->
+            <div class="small_box col_three">
+              <div class="inner"><h3>3</h3><p>文件管理</p></div>
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xs-6 ">
+            <!-- 讨论区 -->
+            <div class="small_box col_fore">
+              <div class="inner"><h3>2</h3><p>讨论区</p></div>
+              <div class="icon">
+                <img src="" alt="">
+              </div>
+              <a href="#" class="small_box_footer">更多 <img src="" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="connectedSortable col-lg-7">
+            <div class="box">
+              <div class="box_header" style="cursor: move;">
+                <h3 class="box_title">本周系统使用统计</h3>
+                <div class="pull_right box_tools">
+                  <div class="btn_group">
+                    <button class="btn"><i class="fa fa-minus">-</i></button>
+                    <button class="btn"><i class="fa fa-times">-</i></button>
+                    <button class="btn"><i class="fa fa-bars">-</i></button>
+                  </div>
                 </div>
               </div>
+              <div class="box_body">
+
+              </div>
             </div>
-            <div class="box-body"></div>
+            <div></div>
           </div>
-          <div></div>
+          <div class="connectedSortable col-lg-5">
+            <div class="box collapsed_box">
+              <div class="box_header" style="cursor: move;">
+                <h3 class="box_title">任务完成排行</h3>
+                <div class="pull_right box_tools">
+                  <div class="btn_group">
+                    <button class="btn"><i class="fa fa-plus">-</i></button>
+                    <button class="btn"><i class="fa fa-times">-</i></button>
+                    <button class="btn"><i class="fa fa-bars">-</i></button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="box_body">
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="footer">
+        <div class="foot">
+          <p>
+            Copyright © 2019 <a href="#">MojoCube</a>.
+          </p>
+          All rights reserved.
+        </div>
+        <label>2019年03月13日, 星期三</label>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
+    // import MagicCommonFooter from "./MagicCommonFooter";
     export default {
-        name: "MagicSectionRight"
+      name: "MagicSectionRight",
+      components: {
+        // MagicCommonFooter,
+      },
     }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
   .content_wrapper{
     background: #ecf0f5;
     flex:1;
@@ -158,7 +185,7 @@
   }
   @media (min-width: 1200px){
     .col-xs-6{
-      width: 22%;
+      width: 25%;
     }
   }
   .col-lg-3{
@@ -173,7 +200,7 @@
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 30px;
+    padding-left: 15px;
   }
   .bg_aqua{
     background-color: #00c0ef;
@@ -221,24 +248,17 @@
   }
   .connectedSortable{
     min-width: 100px;
-  }
-  @media (min-width: 1200px){
-    .col-lg-7 {
-      width: 58%;
-      float: left;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-  @media (max-width: 945px){
-    .col-lg-7 {
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-
-    }
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
+  /*@media (max-width: 945px){*/
+    /*.col-lg-7 {*/
+      /*width: 100%;*/
+      /*margin-left: 15px;*/
+      /*margin-right: 15px;*/
+    /*}*/
+  /*}*/
   .box {
     position: relative;
     border-radius: 3px;
@@ -287,8 +307,17 @@
     cursor: pointer;
     outline: none;
   }
-
-
+  .box_body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    border-top: solid 1px #eee;
+    overflow: auto;
+    height: 300px;
+  }
   @media screen and (max-width: 945px){
     .content_header h1{
       width: 100%;
@@ -297,7 +326,7 @@
 
     }
     .col-xs-6{
-      width: 45%;
+      width: 50%;
     }
     .col_one{
       padding-left: 15px;
@@ -305,10 +334,64 @@
   }
   @media (max-width: 1400px){
     .col-xs-6{
-      width: 45%;
+      width: 50%;
     }
     .col_one{
       padding-left: 15px;
     }
+  }
+  @media (min-width: 1200px){
+    .col-lg-7 {
+      width: 58%;
+      float: left;
+      padding-right: 15px;
+    }
+    .col-lg-5 {
+      width: 37%;
+      float: left;
+      position: relative;
+      padding-right: 15px;
+    }
+  }
+  @media (max-width: 1400px){
+    .col-lg-7 {
+      width: 100%;
+      padding-right: 30px;
+    }
+    .col-lg-5 {
+      width: 100%;
+      padding-right: 30px;
+    }
+  }
+
+
+
+  .footer{
+  // position: absolute;
+  // bottom:0px;
+    background:#ffffff;
+    height:55px;
+    border-top:2px solid #d1d6db;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+  .foot{
+    display: flex;
+    padding-left:17px;
+  p{
+    display: flex;
+    font-weight: 600;
+  a{
+    color:#3c8dbc;
+    font-weight: 600;
+    margin-left:5px;
+  }
+  }
+  }
+  label{
+    padding-right:18px;
+  }
+
   }
 </style>

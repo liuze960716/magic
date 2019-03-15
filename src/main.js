@@ -3,9 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//公共的样式
 import './assets/css/common.css'
+// 引入jq
 import 'jquery/dist/jquery'
 import './assets/js/jquery-1.8.3'
+//引入小图标
+import './assets/iconfont.css'
+// 引入echarts
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts;
+//引入bootstrap
 // import 'bootstrap/dist/js/bootstrap'
 // import 'bootstrap/dist/css/bootstrap.css'
 // import './assets/css/bootstrap.min.css'
