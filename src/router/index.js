@@ -4,9 +4,12 @@ import MagicCommon from '../page/MagicCommon'
 import MagicSectionRight from'../components/common/MagicSectionRight'
 import MagicWork from'../components/Magicwork/MagicWork'
 import MagicSystemType from'../components/MagicSystem/MagicSystemType'
-import magicEchaters from'../components/Echarts/MagicEcharts'
+import MagicEchaters from'../components/Echarts/MagicEcharts'
 import MaginDiscussSection from'../components/MagicDiscuss/MaginDiscussSection'
 import MagicLogin from'../page/MagicLogin'
+import MagicAlbum from'../components/MagicAlbum/MagicAlbum'
+import MagicCalendar from'../components/MagicCalendar/MagicCalendar'
+import MagicAccount from'../components/MagicAccount/MagicAccount'
 
 
 Vue.use(Router);
@@ -34,13 +37,27 @@ export default new Router({
           component:MagicSystemType
         },
         {
-          path:"magicEchaters",
-          component:magicEchaters
+          path:"MagicEchaters",
+          component:MagicEchaters
         },
         {
           path:"MaginDiscussSection",
           component:MaginDiscussSection
+        },
+        {
+          path:"MagicAlbum",
+          component:MagicAlbum
+        },
+        {
+          path:"MagicCalendar",
+          component:MagicCalendar
+        },
+        {
+          path:"MagicAccount",
+          component:MagicAccount
         }
+
+
       ]
     },
     {

@@ -1,21 +1,20 @@
 <template>
- <div class="bigBox">
-   <magic-common-header></magic-common-header>
-   <user-center></user-center>
-   <magic-discuss-pager></magic-discuss-pager>
+<div class="bigBox">
+  <magic-common-header></magic-common-header>
+   <newly-center></newly-center>
    <div class="f">
-      <magic-common-footer></magic-common-footer>
+     <magic-common-footer></magic-common-footer>
    </div>
 
  </div>
 </template>
+
 <script>
   import MagicCommonHeader from '../common/MagicCommonHeader'
-  import userCenter from './user/center'
-  import MagicDiscussPager from '../MagicDiscuss/MagicDiscussPager'
+  import newlyCenter from './newly/center'
   import MagicCommonFooter from '../common/MagicCommonFooter'
   export default {
-   name:'MagicUser',
+   name:'MagicNewly',
    data () {
      return {
 
@@ -23,8 +22,7 @@
    },
    components: {
      MagicCommonHeader,
-     userCenter,
-     MagicDiscussPager,
+     newlyCenter,
      MagicCommonFooter
    }
  }
@@ -35,6 +33,7 @@
   width:100%;
   height:100%;
   position: relative;
+  // overflow: hidden;
   .f{
     position: absolute;
     right:0px;
@@ -42,5 +41,6 @@
     width:100%;
   }
 }
+
 
 </style>

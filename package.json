@@ -15,6 +15,7 @@
     "element-ui": "^2.6.1",
     "popper.js": "^1.14.7",
     "vue": "^2.6.8",
+    "vue-fullcalendar": "^1.0.9",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.0"
   },

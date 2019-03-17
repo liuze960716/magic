@@ -8,6 +8,7 @@ import './assets/css/common.css'
 // 引入jq
 import 'jquery/dist/jquery'
 import './assets/js/jquery-1.8.3'
+
 //引入小图标
 import './assets/iconfont.css'
 // 引入echarts
@@ -18,12 +19,14 @@ Vue.prototype.$echarts = echarts;
 // import 'bootstrap/dist/css/bootstrap.css'
 // import './assets/css/bootstrap.min.css'
 // import './assets/css/skin-blue.min.css'
-
-
+//引入ElementUI
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI);
 
-Vue.use(ElementUI)
+import FullCalendar from 'vue-fullcalendar'
+Vue.use(FullCalendar);
+
 
 Vue.config.productionTip = true;
 

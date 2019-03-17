@@ -1,21 +1,21 @@
 <template>
  <div class="bigBox">
    <magic-common-header></magic-common-header>
-   <user-center></user-center>
+   <magic-inform-center></magic-inform-center>
    <magic-discuss-pager></magic-discuss-pager>
    <div class="f">
-      <magic-common-footer></magic-common-footer>
+     <magic-common-footer></magic-common-footer>
    </div>
 
  </div>
 </template>
 <script>
   import MagicCommonHeader from '../common/MagicCommonHeader'
-  import userCenter from './user/center'
+  import MagicInformCenter from './imfrom/center'
   import MagicDiscussPager from '../MagicDiscuss/MagicDiscussPager'
   import MagicCommonFooter from '../common/MagicCommonFooter'
-  export default {
-   name:'MagicUser',
+ export default {
+   name:'MagicInform',
    data () {
      return {
 
@@ -23,7 +23,7 @@
    },
    components: {
      MagicCommonHeader,
-     userCenter,
+     MagicInformCenter,
      MagicDiscussPager,
      MagicCommonFooter
    }

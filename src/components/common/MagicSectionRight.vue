@@ -78,6 +78,43 @@
           </div>
           <div class="connectedSortable col-lg-5">
             <div class="box collapsed_box">
+              <!--<div class="box_header" style="cursor: move;">-->
+                <!--<h3 class="box_title">任务完成排行</h3>-->
+                <!--<div class="pull_right box_tools">-->
+                  <!--<div class="btn_group">-->
+                    <!--<button class="btn"><i class="fa fa-plus">-</i></button>-->
+                    <!--<button class="btn"><i class="fa fa-times">-</i></button>-->
+                    <!--<button class="btn"><i class="fa fa-bars">-</i></button>-->
+                  <!--</div>-->
+
+                <!--</div>-->
+              <!--</div>-->
+              <div class="box_body">
+                <div id='schedule-box' class="boxshaw"></div>
+                <div><h3 id='h3Ele'></h3></div>
+              </div>
+            </div>
+          </div>
+          <div class="connectedSortable col-lg-7">
+            <div class="box">
+              <div class="box_header" style="cursor: move;">
+                <h3 class="box_title">本周系统使用统计</h3>
+                <div class="pull_right box_tools">
+                  <div class="btn_group">
+                    <button class="btn"><i class="fa fa-minus">-</i></button>
+                    <button class="btn"><i class="fa fa-times">-</i></button>
+                    <button class="btn"><i class="fa fa-bars">-</i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="box_body">
+
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="connectedSortable col-lg-5">
+            <div class="box collapsed_box">
               <div class="box_header" style="cursor: move;">
                 <h3 class="box_title">任务完成排行</h3>
                 <div class="pull_right box_tools">
@@ -98,10 +135,7 @@
       </div>
       <div class="footer">
         <div class="foot">
-          <p>
-            Copyright © 2019 <a href="#">MojoCube</a>.
-          </p>
-          All rights reserved.
+          <p>Copyright © 2019<a href="#">MojoCube</a>.</p>All rights reserved.
         </div>
         <label>2019年03月13日, 星期三</label>
       </div>
@@ -110,15 +144,42 @@
 
 <script>
     // import MagicCommonFooter from "./MagicCommonFooter";
+    import $ from'jquery'
+    import Schedule from '../../assets/js/schedule'
     export default {
       name: "MagicSectionRight",
       components: {
         // MagicCommonFooter,
       },
+      mounted:function () {
+        var mySchedule = new Schedule({
+          el: '#schedule-box',
+          //date: '2018-9-20',
+          clickCb: function (y,m,d) {
+            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+          },
+          nextMonthCb: function (y,m,d) {
+            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+          },
+          nextYeayCb: function (y,m,d) {
+            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+          },
+          prevMonthCb: function (y,m,d) {
+            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+          },
+          prevYearCb: function (y,m,d) {
+            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+          }
+        })
+
+      }
+
+
     }
 </script>
 
 <style lang='scss' scoped>
+  @import "https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css";
   .content_wrapper{
     background: #ecf0f5;
     flex:1;
@@ -393,5 +454,74 @@
     padding-right:18px;
   }
 
+  }
+
+
+
+  /*日历*/
+  #schedule-box{
+    width: 320px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    font-size: 13px;
+  }
+  .schedule-hd{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .today{
+    flex: 1;
+    text-align: center;
+  }
+  .ul-box{
+    overflow: hidden;
+  }
+  .ul-box > li{
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .other-month{
+    color: #999999;
+  }
+  .current-month{
+    color: #333333;
+  }
+  .today-style{
+    border-radius: 50%;
+    background: #58d321;
+  }
+  .arrow{
+    cursor: pointer;
+  }
+  .dayStyle{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+  }
+  .current-month > .dayStyle:hover{
+    background: #00BDFF;
+    color: #ffffff;
+  }
+  .today-flag{
+    background: #00C2B1;
+    color: #fff;
+  }
+  .boxshaw{
+    box-shadow: 2px 2px 15px 2px #e3e3e3;
+  }
+  .selected-style {
+    background: #00BDFF;
+    color: #ffffff;
+  }
+  #h3Ele{
+    text-align: center;
+    padding: 10px;
   }
 </style>

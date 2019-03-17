@@ -11,7 +11,7 @@ body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td {
 html,body {
   height: 100%;
   position: relative;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
   /*overflow-y: hidden;*/
 }
 html {

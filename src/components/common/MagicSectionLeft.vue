@@ -34,39 +34,40 @@
             background-color="#222d32"
             text-color="#fff"
             active-text-color="#ffd04b">
-
+            <!--系统管理-->
             <el-submenu index="1">
               <template slot="title">
                 <i class="iconfont icon-xitongguanli-"></i>
                 <span>系统管理</span>
               </template>
-
               <el-menu-item-group>
                 <router-link to="MagicSystemType">
                   <el-menu-item index="1-1">菜单管理</el-menu-item>
                 </router-link>
-                <el-menu-item index="1-2">类型管理</el-menu-item>
+                <router-link to="MagicSystemType">
+                  <el-menu-item index="1-2">类型管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicSystemType">
                 <el-menu-item index="1-3">状态管理</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--角色管理-->
             <el-submenu index="2">
               <template slot="title">
                 <i class="iconfont icon-jiaoseguanli"></i>
                 <span>角色管理</span>
               </template>
-
               <el-menu-item-group>
                 <el-menu-item index="1-1">角色列表</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--用户管理-->
             <el-submenu index="3">
               <template slot="title">
                 <i class="iconfont icon-1"></i>
                 <span>用户管理</span>
               </template>
-
               <el-menu-item-group>
                 <el-menu-item index="1-1">部门管理</el-menu-item>
                 <el-menu-item index="1-2">职位管理</el-menu-item>
@@ -74,7 +75,7 @@
                 <el-menu-item index="1-3">在线用户</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--考勤管理-->
             <el-submenu index="4">
               <template slot="title">
                 <i class="iconfont icon-kaoqinbaogao"></i>
@@ -85,61 +86,53 @@
                 <el-menu-item index="1-1">考勤管理</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--流程管理-->
             <el-submenu index="5">
               <template slot="title">
                 <i class="iconfont icon-xitongguanli-"></i>
                 <span>流程管理</span>
               </template>
-
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <router-link to="MagicEchaters">
+                  <el-menu-item index="1-1">用户数据</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--数据管理-->
             <el-submenu index="6">
               <template slot="title">
                 <i class="iconfont icon-xitongguanli-"></i>
                 <span>数据管理</span>
               </template>
-
               <el-menu-item-group>
-                <router-link to="magicEchaters">
-                  <el-menu-item index="1-1">用户数量</el-menu-item>
+                <router-link to="MagicAlbum">
+                  <el-menu-item index="1-1">旋转幻灯片</el-menu-item>
                 </router-link>
-                <el-menu-item index="1-2">在线人数</el-menu-item>
-                <el-menu-item index="1-3">热门曲线</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--邮件管理-->
             <el-submenu index="7">
               <template slot="title">
                 <i class="iconfont icon-email"></i>
                 <span>邮件管理</span>
               </template>
-
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <router-link to="MagicAccount">
+                  <el-menu-item index="1-1">账号管理</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--公告通知-->
             <el-submenu index="8">
               <template slot="title">
                 <i class="iconfont icon-renwu"></i>
-                <span>任务管理</span>
+                <span>公告通知</span>
               </template>
-
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <el-menu-item index="1-1">通知管理</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--日程管理-->
             <el-submenu index="9">
               <template slot="title">
                 <i class="iconfont icon-xitongguanli-"></i>
@@ -152,29 +145,23 @@
                 <el-menu-item index="1-3">选项3</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--工作计划-->
             <el-submenu index="10">
               <template slot="title">
                 <i class="iconfont icon-xitongguanli-"></i>
                 <span>工作计划</span>
               </template>
-
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
                 <el-menu-item index="1-3">选项3</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-
+            <!--财务管理-->
             <el-submenu index="11">
               <template slot="title">
                 <i class="iconfont icon-caiwuguanli"></i>
                 <span>财务管理</span>
               </template>
-
               <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
                 <el-menu-item index="1-3">选项3</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
@@ -205,6 +192,7 @@
 
 <style scoped>
   .slimScrollDiv{
+    width: 233px;
     overflow: hidden;
     background-color: #222d32;
   }
@@ -264,7 +252,7 @@
   .sidebar_form {
     border-radius: 3px;
     border: 1px solid #374850;
-    margin: 10px 10px;
+    margin: 9px 12px;
     overflow: hidden;
     text-overflow: clip;
   }
@@ -281,9 +269,8 @@
     border: 1px solid transparent;
     transition: all .3s ease-in-out;
     border-top-left-radius: 2px 2px;
-    /*padding-left: 5px;*/
     outline: none;
-    padding: 7px 2px;
+    padding: 7px 0px;
   }
   .input_group_btn {
     white-space: nowrap;
