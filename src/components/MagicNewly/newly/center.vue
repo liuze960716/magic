@@ -1,7 +1,6 @@
 <template>
  <div class="center">
    <div class="xinzeng" style="border-top:3px solid #d2d6de;background:#ffffff;box-shadow:2px 2px 2px 2px #e6eaef">
-
       <div class="diyi" style="background:#ffffff;" >
       	<tr>
 			    <td style="width: 517px;">
@@ -62,10 +61,12 @@
       		</td>
       	</tr>
       	<hr style="color:#efefef ;" />
-      	<tr style="margin-bottom: .10px;">
+      	<tr style="margin-bottom: 10px;">
       		<td class="tds">
-      			<img src="../../../static/img/baocun.jpg" />
-      			<img src="../../../static/img/quxiao.jpg" />
+            <input type="button" value="保存">
+            <input type="button" value="取消">
+      			<!--<img src="../../../../static/img/baocun.jpg" />-->
+      			<!--<img src="../../../../static/img/quxiao.jpg" />-->
       		</td>
       	</tr>
        </div>
@@ -77,7 +78,7 @@
 	import '@/assets/css/laydate.1.css'
 	import 'static/echarts/laydate.js'
 	import '@/assets/css/laydate.css'
- export default {
+  export default {
    name:'newlyCenter',
    data () {
      return {
@@ -114,8 +115,8 @@
 
 <style lang='scss' scoped>
 .center{
-  width:100%;
-  padding-bottom:20px;
+  /*width:100%;*/
+  /*padding-bottom:20px;*/
 }
 .xinzeng{
   width:97%;

@@ -31,7 +31,7 @@
   }
   .bgbox{
     /*margin-left: 100px;*/
-    width: 100%;
+    width: 1295px;
     background: -webkit-linear-gradient(rgb(000, 000, 226), rgba(250, 520, 520, 0.2));
   }
   .box{

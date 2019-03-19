@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import index from '@/apis/index.js'
+import index from '../../../apis/index.js'
  export default {
    name:'gatherCenter',
    data () {
@@ -101,7 +101,7 @@ import index from '@/apis/index.js'
             font-size: 20px;
             font-weight: 600;
             margin-top: 4px;
-            margin-right:5px;
+            margin-right:-2px;
           }
         }
         a:first-child{
@@ -193,7 +193,7 @@ import index from '@/apis/index.js'
             color:white;
             margin-top:5px;
             margin-left:4px;
-            margin-right:4px;
+            margin-right:13px;
           }
         }
         a:last-child{

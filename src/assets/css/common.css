@@ -50,6 +50,8 @@ em,i,h1,h2,h3,h4{
 span{
   color: white;
 }
-
+.bigBox{
+  overflow-y: auto;
+}
 
 

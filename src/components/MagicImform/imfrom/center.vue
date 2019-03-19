@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import index from '@/apis/index.js'
+import index from '../../../apis/index.js'
  export default {
    name:'informCenter',
    data () {

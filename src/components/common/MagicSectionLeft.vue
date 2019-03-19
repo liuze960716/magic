@@ -44,11 +44,8 @@
                 <router-link to="MagicSystemType">
                   <el-menu-item index="1-1">菜单管理</el-menu-item>
                 </router-link>
-                <router-link to="MagicSystemType">
+                <router-link to="MagicMenuType">
                   <el-menu-item index="1-2">类型管理</el-menu-item>
-                </router-link>
-                <router-link to="MagicSystemType">
-                <el-menu-item index="1-3">状态管理</el-menu-item>
                 </router-link>
               </el-menu-item-group>
             </el-submenu>
@@ -59,7 +56,9 @@
                 <span>角色管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">角色列表</el-menu-item>
+                <router-link to="MagicMap">
+                  <el-menu-item index="1-1">人员分布</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
             <!--用户管理-->
@@ -69,10 +68,18 @@
                 <span>用户管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">部门管理</el-menu-item>
-                <el-menu-item index="1-2">职位管理</el-menu-item>
-                <el-menu-item index="1-3">用户管理</el-menu-item>
-                <el-menu-item index="1-3">在线用户</el-menu-item>
+                <router-link to="MagicUserCom">
+                  <el-menu-item index="1-1">部门管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicUserJob">
+                  <el-menu-item index="1-2">职位管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicUserParty">
+                  <el-menu-item index="1-3">用户管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicUserZai">
+                  <el-menu-item index="1-4">在线用户</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
             <!--考勤管理-->
@@ -81,20 +88,30 @@
                 <i class="iconfont icon-kaoqinbaogao"></i>
                 <span>考勤管理</span>
               </template>
-
               <el-menu-item-group>
-                <el-menu-item index="1-1">考勤管理</el-menu-item>
+                <router-link to="MagicAttendance">
+                  <el-menu-item index="1-1">考勤管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicWeekly">
+                  <el-menu-item index="1-2">考勤周报表</el-menu-item>
+                </router-link>
+                <router-link to="MagicMonth">
+                  <el-menu-item index="1-3">考勤月报表</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
-            <!--流程管理-->
+            <!--任务管理-->
             <el-submenu index="5">
               <template slot="title">
-                <i class="iconfont icon-xitongguanli-"></i>
-                <span>流程管理</span>
+                <i class="iconfont icon-kaoqinbaogao"></i>
+                <span>任务管理</span>
               </template>
               <el-menu-item-group>
-                <router-link to="MagicEchaters">
-                  <el-menu-item index="1-1">用户数据</el-menu-item>
+                <router-link to="MagicTask">
+                  <el-menu-item index="1-1">任务管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicMyTask">
+                  <el-menu-item index="1-2">我的任务</el-menu-item>
                 </router-link>
               </el-menu-item-group>
             </el-submenu>
@@ -105,20 +122,27 @@
                 <span>数据管理</span>
               </template>
               <el-menu-item-group>
+                <router-link to="MagicEchaters">
+                  <el-menu-item index="1-1">数据管理</el-menu-item>
+                </router-link>
                 <router-link to="MagicAlbum">
-                  <el-menu-item index="1-1">旋转幻灯片</el-menu-item>
+                  <el-menu-item index="1-2">旋转幻灯片</el-menu-item>
                 </router-link>
               </el-menu-item-group>
             </el-submenu>
-            <!--邮件管理-->
+            <!--流程管理-->
             <el-submenu index="7">
               <template slot="title">
-                <i class="iconfont icon-email"></i>
-                <span>邮件管理</span>
+                <i class="iconfont icon-xitongguanli-"></i>
+                <span>流程管理</span>
               </template>
               <el-menu-item-group>
-                <router-link to="MagicAccount">
-                  <el-menu-item index="1-1">账号管理</el-menu-item>
+
+                <router-link to="MagicUser">
+                  <el-menu-item index="1-2">流程管理</el-menu-item>
+                </router-link>
+                <router-link to="MagicGather">
+                  <el-menu-item index="1-3">流程汇总</el-menu-item>
                 </router-link>
               </el-menu-item-group>
             </el-submenu>
@@ -129,40 +153,31 @@
                 <span>公告通知</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">通知管理</el-menu-item>
+                <router-link to="MagicNotice">
+                  <el-menu-item index="1-1">通知列表</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
-            <!--日程管理-->
+            <!--邮件管理-->
             <el-submenu index="9">
               <template slot="title">
-                <i class="iconfont icon-xitongguanli-"></i>
-                <span>日程管理</span>
-              </template>
-
-              <el-menu-item-group>
-                <el-menu-item index="1-1">选项1</el-menu-item>
-                <el-menu-item index="1-2">选项2</el-menu-item>
-                <el-menu-item index="1-3">选项3</el-menu-item>
-              </el-menu-item-group>
-            </el-submenu>
-            <!--工作计划-->
-            <el-submenu index="10">
-              <template slot="title">
-                <i class="iconfont icon-xitongguanli-"></i>
-                <span>工作计划</span>
+                <i class="iconfont icon-email"></i>
+                <span>邮件管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <router-link to="MagicAccount">
+                  <el-menu-item index="1-1">账号管理</el-menu-item>
+                </router-link>
               </el-menu-item-group>
             </el-submenu>
             <!--财务管理-->
-            <el-submenu index="11">
+            <el-submenu index="10">
               <template slot="title">
                 <i class="iconfont icon-caiwuguanli"></i>
                 <span>财务管理</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-3">选项3</el-menu-item>
+                <el-menu-item index="1-1">选项1</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 
@@ -195,6 +210,7 @@
     width: 233px;
     overflow: hidden;
     background-color: #222d32;
+    /*position: relative;*/
   }
   .side{
     height: 100%;

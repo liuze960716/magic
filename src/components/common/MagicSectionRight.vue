@@ -78,20 +78,20 @@
           </div>
           <div class="connectedSortable col-lg-5">
             <div class="box collapsed_box">
-              <!--<div class="box_header" style="cursor: move;">-->
-                <!--<h3 class="box_title">任务完成排行</h3>-->
-                <!--<div class="pull_right box_tools">-->
-                  <!--<div class="btn_group">-->
-                    <!--<button class="btn"><i class="fa fa-plus">-</i></button>-->
-                    <!--<button class="btn"><i class="fa fa-times">-</i></button>-->
-                    <!--<button class="btn"><i class="fa fa-bars">-</i></button>-->
-                  <!--</div>-->
+              <div class="box_header" style="cursor: move;">
+                <h3 class="box_title">任务完成排行</h3>
+                <div class="pull_right box_tools">
+                  <div class="btn_group">
+                    <button class="btn"><i class="fa fa-plus">-</i></button>
+                    <button class="btn"><i class="fa fa-times">-</i></button>
+                    <button class="btn"><i class="fa fa-bars">-</i></button>
+                  </div>
 
-                <!--</div>-->
-              <!--</div>-->
+                </div>
+              </div>
               <div class="box_body">
-                <div id='schedule-box' class="boxshaw"></div>
-                <div><h3 id='h3Ele'></h3></div>
+                <!--<div id='schedule-box' class="boxshaw"></div>-->
+                <!--<div><h3 id='h3Ele'></h3></div>-->
               </div>
             </div>
           </div>
@@ -143,38 +143,35 @@
 </template>
 
 <script>
-    // import MagicCommonFooter from "./MagicCommonFooter";
     import $ from'jquery'
     import Schedule from '../../assets/js/schedule'
     export default {
       name: "MagicSectionRight",
       components: {
-        // MagicCommonFooter,
+
       },
-      mounted:function () {
-        var mySchedule = new Schedule({
-          el: '#schedule-box',
-          //date: '2018-9-20',
-          clickCb: function (y,m,d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
-          },
-          nextMonthCb: function (y,m,d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
-          },
-          nextYeayCb: function (y,m,d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
-          },
-          prevMonthCb: function (y,m,d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
-          },
-          prevYearCb: function (y,m,d) {
-            document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
-          }
-        })
-
-      }
-
-
+      // mounted:function () {
+      //   var mySchedule = new Schedule({
+      //     el: '#schedule-box',
+      //     //date: '2018-9-20',
+      //     clickCb: function (y,m,d) {
+      //       document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+      //     },
+      //     nextMonthCb: function (y,m,d) {
+      //       document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+      //     },
+      //     nextYeayCb: function (y,m,d) {
+      //       document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+      //     },
+      //     prevMonthCb: function (y,m,d) {
+      //       document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+      //     },
+      //     prevYearCb: function (y,m,d) {
+      //       document.querySelector('#h3Ele').innerHTML = '日期：'+y+'-'+m+'-'+d
+      //     }
+      //   })
+      //
+      // }
     }
 </script>
 

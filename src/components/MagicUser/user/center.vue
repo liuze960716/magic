@@ -22,10 +22,7 @@
       <td width="80px"><span class="liSpan">{{item.shen}}</span></td>
       <td width="70px"><span class="iconfont icon-fujian" v-if="item.fujian==1"></span></td>
       <td width='228px'>
-          <a href="javascript:;">
-          <span class="iconfont icon-fangdajing"></span>
-          查看
-          </a>
+          <a href="#"><span class="iconfont icon-fangdajing"></span>查看</a>
       </td>
     </tr>
   </table>
@@ -33,8 +30,8 @@
 </template>
 
 <script>
-import index from '@/apis/index.js'
- export default {
+  import index from '../../../apis/index.js'
+  export default {
    name:'userCenter',
    data () {
      return {
@@ -60,6 +57,9 @@ import index from '@/apis/index.js'
 </script>
 
 <style lang='scss' scoped>
+  input{
+    outline: none;
+  }
 .center{
   padding-left:17px;
   padding-right:17px;
@@ -87,7 +87,7 @@ import index from '@/apis/index.js'
           font-size: 20px;
           font-weight: 600;
           margin-top: 4px;
-          margin-left: 3px;
+          margin-left: 15px;
         }
       }
       p{
@@ -152,7 +152,7 @@ import index from '@/apis/index.js'
       td:last-child{
         display: flex;
         a{
-          width:60px;
+          width:40px;
           height:25px;
           background:#3c8dbc;
           border-radius: 4px;

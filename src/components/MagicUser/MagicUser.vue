@@ -1,17 +1,17 @@
 <template>
- <div class="bigBox">
-   <magic-common-header></magic-common-header>
-   <user-center></user-center>
-   <magic-discuss-pager></magic-discuss-pager>
-   <div class="f">
-      <magic-common-footer></magic-common-footer>
+   <div class="bigBox">
+     <magic-header></magic-header>
+     <magic-user-center></magic-user-center>
+     <magic-discuss-pager></magic-discuss-pager>
+     <div class="f">
+        <magic-common-footer></magic-common-footer>
+     </div>
+    <router-view></router-view>
    </div>
-
- </div>
 </template>
 <script>
-  import MagicCommonHeader from '../common/MagicCommonHeader'
-  import userCenter from './user/center'
+  import MagicHeader from './user/MagicHeader'
+  import MagicUserCenter from './user/center'
   import MagicDiscussPager from '../MagicDiscuss/MagicDiscussPager'
   import MagicCommonFooter from '../common/MagicCommonFooter'
   export default {
@@ -22,8 +22,8 @@
      }
    },
    components: {
-     MagicCommonHeader,
-     userCenter,
+     MagicHeader,
+     MagicUserCenter,
      MagicDiscussPager,
      MagicCommonFooter
    }
@@ -32,8 +32,9 @@
 
 <style lang='scss' scoped>
 .bigBox{
-  width:100%;
-  height:100%;
+  /*width:100%;*/
+  /*height:100%;*/
+  width: 1280px;
   position: relative;
   .f{
     position: absolute;
